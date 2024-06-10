@@ -1,0 +1,218 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #065757;
+}
+
+.challenge-title {
+    background: white;
+    color: #026364;
+    font-size: 39px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    max-width: 801px;
+    margin: 38px 55px 39px 424px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+    color: #026364;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.description {
+    color: black;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.challenge-button {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.challenge-button a {
+    background: #009EA0;
+    color: white;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.challenge-button a:hover {
+    background-color: #007d7f;
+}
+
+.profile {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 150px;
+    left: 20px;
+    width: 350px;
+}
+
+.icon {
+    width: 85px;
+    height: 85px;
+    display: block;
+    margin: 0 auto;
+}
+
+.login {
+    display: block;
+    text-decoration: none;
+    color: #065757;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(217, 217, 217, 0.30); 
+    padding: 22px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    margin: 20px;
+    width: 300px;
+    height: auto;
+}
+
+.profile-container > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-container img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 17px;
+}
+
+.profile-container p {
+    margin-top: 0;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 19px; 
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    margin-left: -30px;
+}
+
+.week-button {
+    background-color: white;
+    color: #065757;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.week-button.active {
+    background-color: #065757;
+    color: white;
+    font-weight: bold;
+}
+
+.checkbox-container {
+    max-width: 801px;
+    height: 290px;
+    background-color: #F4F4F4;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-list {
+    padding: 0;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    accent-color: #009EA0;
+}
+
+.checkbox-label {
+    font-size: 16px;
+    color: black; /* Combine with previous declaration */
+}
+
+span {
+    font-weight: bold;
+}
+
+.green-button {
+    background-color: #009EA0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 55%;
+    height: 39px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 19.06px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.green-button:hover {
+    background-color: #007d7f;
+}
+
+.green-button.active {
+    font-weight: 700;
+}
