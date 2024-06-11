@@ -5,6 +5,103 @@ body {
     background-color: #f4f4f4;
 }
 
+
+nav{
+    width: 101%;
+    height: 60px;
+    background: linear-gradient(to right,#025859,#009EA0 );
+    margin-top: -1em;
+    margin-left: -8px;
+    
+    position: fixed;
+    
+    box-shadow: 0px 0px 27px 1px;
+
+    border: none;
+    
+}
+ul{
+    list-style-type: none;
+}
+.kanan{
+    float: left;
+    line-height: 30px;
+    padding-right: 2em;
+    margin-top: none;
+}
+
+.logo{
+    margin-right: 2em;
+    color: white;
+    font-size: 20px;
+}
+.kiri{
+    float: right;
+    line-height: 30px;
+    color: white;
+    margin-right: 2em;
+}
+
+.Register{
+    margin-right: 6em;
+    float: right;
+    line-height: 2em;
+    color: white;
+    background-color: #065757;
+    
+}
+.Register{
+    margin: 0;
+    padding: 0;
+}
+.Register::before,
+.Register::after {
+    content: "";
+    display: table;
+}
+.Register::after{
+    clear: both;
+}
+.Register{
+    margin-right: 2em;
+    margin-top: -1px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    height: 2em;
+    
+}
+.Register:hover{
+    box-shadow: 1px 1px 13px -4px black;
+    border: 1.5px solid white;
+    background-color: #098c8c;
+}
+
+.menuu{
+    width: 3em;
+    height: 43px;
+    float: right;
+    margin-right: 3em;
+    margin-top: -7px ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+<!--TULISAN DARI GOOGLE-->
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 390;
+    font-style: normal;
+}
+
 header {
     background-color: #f8f8f8;
     padding: 10px 0;
