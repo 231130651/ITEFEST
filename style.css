@@ -72,7 +72,7 @@ header {
 
 .profile {
     font-family: 'Roboto', sans-serif;
-    position: fixed;
+    position: absolute;
     top: 150px;
     left: 20px;
     width: 350px;
@@ -128,9 +128,9 @@ header {
 }
 
 main {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
-    margin-left: -30px;
+    margin-left: -25px;
 }
 
 .week-button {
@@ -140,7 +140,7 @@ main {
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    margin: 0 5px;
+    margin: 0 5px ;
     cursor: pointer;
     border-radius: 50px;
     padding: 10px 20px;
@@ -192,6 +192,11 @@ span {
     font-weight: bold;
 }
 
+nav > span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .green-button {
     background-color: #009EA0;
     color: white;
@@ -215,4 +220,108 @@ span {
 
 .green-button.active {
     font-weight: 700;
+}
+
+footer {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    background: linear-gradient(180deg, #033D3D 0%, black 100%);
+}
+
+.copyright {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.newsletter {
+    width: 366px;
+    height: 170px;
+    position: absolute;
+    left: 189px;
+    top: 15px;
+    color: white;
+}
+
+.newsletter h2 {
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 300;
+}
+
+.newsletter p {
+    font-size: 16px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 300;
+}
+
+.email {
+    position: relative;
+    margin-top: 20px;
+}
+
+.email input {
+    width: 203px;
+    height: 41px;
+    background: rgba(217, 217, 217, 0.50);
+    border: none;
+    padding-left: 10px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 14px;
+    color: rgba(217, 217, 217, 0.50);
+}
+
+.email-submit {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -35px;
+    top: 5px;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.social-media {
+    position: absolute;
+    left: 420px; 
+    top: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-media a {
+    width: 40px;
+    height: 30px;
+    display: block;
+}
+.footer-links {
+    position: absolute;
+    width: 200px;
+    top: 30px;
+    bottom: 40px;
+    left: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
