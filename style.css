@@ -108,7 +108,7 @@ header {
     height: auto;
 }
 
-.profile-container > div {
+.profile-container > aside {
     display: flex;
     align-items: center;
     gap: 15px;
