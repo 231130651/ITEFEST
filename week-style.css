@@ -1,0 +1,555 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, #025859, #009EA0);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-right: 2em;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 390;
+}
+
+.navbar ul li.logo {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-left: 2em;
+    padding-right: 1em;
+}
+
+.navbar ul li.zero{
+    font-weight: bold;
+}
+
+.navbar ul li.login {
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navbar ul li.login a {
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: #065757;
+}
+
+.navbar ul li.register {
+    margin-right: 0.5em;
+}
+
+.navbar ul li.login a:hover {
+    background-color: #009EA0;
+    box-shadow: 1px 1px 13px -4px black;
+    border: 1.5px solid white;
+}
+
+.navbar ul li.profile-icon {
+    margin-left: 10px;
+}
+
+.navbar ul li.profile-icon a img {
+    width: 3em;
+    height: 43px;
+    float: right;
+}
+
+.navbar ul li.zero a{
+    font-weight: bold;
+}
+
+.section-container {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #065757;
+}
+
+
+.challenge-title {
+    background: white;
+    color: #026364;
+    font-size: 39px;
+    font-family: 'Patrick Hand', cursive;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    max-width: 801px;
+    margin: 38px 55px 39px 424px;
+    background: white;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.main-title {
+    color: #026364;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.description {
+    color: black;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.challenge-button {
+    float: left;
+    margin-top: 20px;
+}
+
+.challenge-button a {
+    background: #009EA0;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+}
+
+.challenge-button a:hover {
+    background-color: #065757;
+}
+
+.profile {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    width: 350px;
+}
+
+.icon {
+    width: 85px;
+    height: 85px;
+    display: block;
+    margin: 0 auto;
+}
+
+.login {
+    display: block;
+    text-decoration: none;
+    color: #065757;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-container {
+    float: left;
+    margin: 20px;
+    width: 300px;
+    height: auto;
+}
+
+.profile-container aside {
+    overflow: hidden;
+    background: rgba(217, 217, 217, 0.30); 
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    float: left;
+    width: calc(100% - 75px);
+}
+
+.profile-container img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.profile-container p {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 65px;
+}
+
+main {
+    padding: 5px;
+    text-align: center;
+}
+
+.week-button {
+    background-color: white;
+    color: #065757;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 5px ;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.week-button.active {
+    background-color: #065757;
+    color: white;
+    font-weight: bold;
+}
+.checkbox-container {
+    max-width: 801px;
+    height: 290px;
+    background-color: #F4F4F4;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.checkbox-list {
+    padding: 0;
+    overflow: hidden; 
+}
+
+.checkbox-item {
+    float: left; 
+    margin-bottom: 10px;
+    clear: both; 
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    accent-color: #009EA0;
+    vertical-align: middle;
+}
+
+.checkbox-label {
+    font-size: 16px;
+    color: black; 
+}
+
+span {
+    font-weight: bold;
+}
+
+nav > span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.green-button {
+    background-color: #009EA0;
+    color:    white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 55%;
+    height: 39px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    line-height: 19.06px;
+    word-wrap: break-word;
+    text-align: left;
+    text-decoration: none;
+}
+
+.green-button:hover {
+    background-color: #007d7f;
+}
+
+.green-button.active {
+    font-weight: 700;
+}
+
+footer{
+    margin-top: 8em;
+    margin-left: 1px;
+    margin-bottom: 1em;
+    background-color: white;
+    border:1px solid #717272;
+    border-left: none;
+    border-right: none;
+    width: 1258px;
+    height: 26em;
+}
+.isi_artikel_footer{
+    margin-left: 5em;
+}
+.jdl_artikel_footer{
+    font-weight: bold;
+    margin-top: 4em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+.jdl_artikel_footer1{
+    font-weight: bold;
+    margin-top: 6em;
+    margin-bottom: 1em;
+    margin-left: 5em;
+}
+.isi_artikel_footer1{
+    margin-left: 19em;
+    margin-top: -2em;
+}
+.jdl_artikel_footer2{
+    float: right;
+    margin-right: 473px;
+    margin-top: -14em;
+}
+.isi_artikel_footer2{
+    float: right;
+    margin-top: -12em;
+    margin-right: 27em;
+}
+.zero_bawah{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-size: 15px;
+
+}
+.isi_artikel_footer3{
+    float: right;
+    margin-top: -14em;
+    margin-right: 17em;
+
+}
+.jdl_artikel_footer3{
+    font-weight: bold;
+    float: right;
+    margin-right: 21em;
+    margin-top: -16em;
+}
+.masukkan_email_bawah{
+    background-color: rgb(226, 226, 226);
+    display: table;
+    width: 12em;
+    height: 2em;
+    line-height: 3em;
+    padding-left: 1em;
+    margin-left: 45em;
+    margin-top: -3em;
+    color: rgb(139, 138, 138);
+}
+.untuk_tombol_nya{
+    color: white;
+    background-color: #009EA0;
+    display: table;
+    padding: 13px 15px;
+    border-radius: 7px;
+    float: right;
+    margin-right: 10em;
+    margin-top: -3em;
+}
+.copyright{
+    text-align: center;
+    padding-top: 3em;
+}
+
+@media (max-width: 770px) {
+    .container {
+        margin: 20px 15px;
+    }
+
+    .navbar {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .navbar, .navbar ul, .navbar ul li, .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .ubah-dikit {
+        font-size: 15px;
+    }
+
+    .ubah-satu {
+        font-size: 12px;
+    }
+
+    .ubaha {
+        display: none;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: nowrap;
+    }
+
+    header {
+        background: linear-gradient(to right, #025859, #009EA0);
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        color: white;
+    }
+
+    .navbar ul li.logo {
+        font-size: 18px;
+        margin-left: 0;
+        margin-right: 8px;
+    }
+
+    .navbar ul li.login {
+        margin-left: 0;
+    }
+
+    .navbar ul li.profile-container {
+        display: none;
+    }
+
+    .ubah-dikitt {
+        display: none;
+    }
+
+    .main-title {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .week-button {
+        font-size: 16px;
+        float: left;
+    }
+
+    .checkbox-container {
+        float: left;
+    }
+
+    .checkbox-label {
+        font-size: 16px;
+    }
+
+    .week-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .green-button {
+        padding: 8px 16px;
+    }
+
+    .profile,
+    .profile-container {
+        display: none;
+    }
+
+    .profile-icon {
+        display: none;
+    }
+
+    footer {
+        border: 1px solid #717272;
+        border-left: none;
+        border-right: none;
+        max-width: 770px;
+        height: 20em;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+.container {
+    margin: 20px 15px;
+}
+
+.main-title {
+    font-size: 16px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.week-button{
+    font-size: 14px;
+    display: block;
+    margin: 1em;
+}
+
+.checkbox-label {
+    font-size: 14px;
+}
+
+.green-button {
+    font-size: 12px;
+}
+
+.navbar ul li {
+    margin-right: 1em;
+}
+
+.navbar ul li a {
+    display: none;
+}
+
+.navbar ul li.logo {
+    font-size: 15px;
+    margin-left: 1em;
+    padding-right: 0.5em;
+    text-align: center;
+}
+
+.navbar ul li.login a {
+    padding: 6px 20px;
+    font-size: 14px;
+}
+
+.profile,
+.profile-container {
+    display: none; 
+}
+
+}
