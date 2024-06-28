@@ -13,7 +13,7 @@
         <nav class="navbar">
             <ul class="navbar-left">
                 <li class="logo">Penyu Hijaw</li>
-                <li class="home"><a href="home.html">Home</a></li>
+                <li class="home"><a href="index.html">Home</a></li>
                 <li class="zero"><a href="week1.html">Zero Waste Journey</a></li>
                 <li class="community"><a href="komunitas.html">Our Community</a></li>
                 <li class="peta"><a href="BankSampah.html">Peta Daur Ulang</a></li>
@@ -30,9 +30,9 @@
         <h1>5R Community</h1>
         <nav>
             <input type="text" placeholder="Cari topik disini" class="search-bar">
-            <button class="new-post-btn">
+            <a href="komunitas.html"><button class="new-post-btn" onclick="openNewPostOverlay()">
                 <span class="icon">+</span> New Post
-            </button>
+            </button></a>
         </nav>
     </section>
 
@@ -115,5 +115,62 @@
         <div class="untuk_tombol_nya">Gabung Sekarang</div>
         <p class="copyright">Hak Cipta &copy; 2024 Penyu Hijaw by H&M</p>
     </footer>
+
+    <div id="overlay-post-new" class="overlay-post-new">
+        <div class="overlay-inner">
+            <button class="close-btn" onclick="closeNewPostOverlay()">&times;</button>
+            <h2>Buat Postingan Baru</h2>
+            <form id="new-post-form">
+                <div class="post-type">
+                    <input type="radio" id="text-post" name="post-type" value="text" checked>
+                    <label for="text-post">Teks</label>
+                    <input type="radio" id="image-post" name="post-type" value="image">
+                    <label for="image-post">Gambar</label>
+                    <input type="radio" id="video-post" name="post-type" value="video">
+                    <label for="video-post">Video</label>
+                </div>
+    
+                <div class="post-content">
+                    <textarea id="post-content" placeholder="Masukkan teks postingan..."></textarea>
+                    <input type="file" id="image-input" accept="image/*">
+                </div>
+    
+                <button type="submit">Posting</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+    
+        function openNewPostOverlay() {
+            var overlay = document.getElementById('overlay-post-new');
+            overlay.style.display = 'block';
+        }
+        
+        function closeNewPostOverlay() {
+            var overlay = document.getElementById('overlay-post-new');
+            overlay.style.display = 'none';
+        }
+        
+        document.getElementById('new-post-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var postType = document.querySelector('input[name="post-type"]:checked').value;
+            var postContent = document.getElementById('post-content').value;
+            var imageData = document.getElementById('image-input').files[0];
+        
+            if (postContent.trim() === '') {
+                alert('Post tidak boleh kosong');
+            } else {
+                console.log('Form submitted!');
+                console.log('Post Type:', postType);
+                console.log('Post Content:', postContent);
+                console.log('Image Data:', imageData);
+        
+                closeNewPostOverlay();
+                alert('Post telah terkirim. Harap tunggu moderasi admin. ^^');
+            }
+        });
+
+        </script>
 </body>
 </html>
