@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1250px;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right,#025859,#009EA0 );
+    margin-top: 0;
+    margin-left: 0;
+    
+    position: fixed;
+    
+    box-shadow: 0px 0px 27px 1px;
+
+    border: none;
+    
+}
+ul{ 
+    list-style-type: none;
+}
+.kanan{
+    float: left;
+    line-height: 30px;
+    padding-right: 2em;
+    margin-top: 14px;
+}
+
+.logo{
+    margin-right: 1em;
+    margin-left: 3em;
+    color: white;
+    font-size: 20px;
+}
+.kiri{
+    float: right;
+    line-height: 30px;
+    color: white;
+    margin-right: 2em;
+    margin-top: 14px;
+}
+
+.Register{
+    margin-right: 6em;
+    float: right;
+    line-height: 2em;
+    color: white;
+    background-color: #065757;
+    
+}
+.Register{
+    margin: 0;
+    padding: 0;
+}
+.Register::before,
+.Register::after {
+    content: "";
+    display: table;
+}
+.Register::after{
+    clear: both;
+}
+.Register{
+    margin-right: 2em;
+    margin-top: 14px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    height: 2em;
+    
+}
+.Register:hover{
+    box-shadow: 1px 1px 13px -4px black;
+    border: 1.5px solid white;
+    background-color: #098c8c;
+}
+
+.menuu{
+    width: 3em;
+    height: 43px;
+    float: right;
+    margin-right: 3em;
+    margin-top: 8px ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+<!--TULISAN DARI GOOGLE-->
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 390;
+    font-style: normal;
+}
+.patrick{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    color: #026364;
+    font-size: 35px;
+    margin-top: 1em;
+}
+.satu{
+    float: left;
+    
+}
+.satu{
+    margin: 0;
+    padding: 0;
+}
+.satu::before,
+.satu::after {
+    content: "";
+    display: table;
+}
+.satu::after{
+    clear: both;
+}
+.box1{
+    background-image: url(./icon/kunci-regis.jpg);
+    background-repeat: no-repeat;
+    background-size: 27em;
+    border-radius: 35px;
+    width: 26em;
+    height: 18em;
+    margin-right: 1em;
+    margin-left: 9em;
+    margin-top: 11em;
+}
+.box2{
+    border-radius: 35px;
+    background-color: white;
+    border: 1px solid gray;
+    width: 28em;
+    height: 31em;
+    margin-right: 1em;
+    margin-left: 6em;
+    margin-top: 5em;
+}
+.dua{
+    margin-top: 2em;
+    margin-left: 120px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #467f7f;
+}
+.putih{
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(239, 238, 238);
+    width: 19em;
+    height: 3em;
+    border-radius: 10px;
+}
+.putih1{
+    margin-top: 3em;
+    margin-left: 68px;
+    color: rgb(203, 202, 202);
+    
+    line-height: 3em;
+
+}
+.putih2{
+    margin-top: 1em;
+    margin-left: 68px;
+    color: rgb(203, 202, 202);
+    
+    line-height: 3em;
+}
+.ubah{
+    margin-left: 1em;
+}
+.ubah1{
+    color: white;
+    text-align: center;
+    line-height: 3em;
+    background-color: #009EA0;
+    border-radius: 10px;
+    font-family: 'roboto',sans-serif;
+}
+@media (max-width: 770px) {
+    body {
+        width: auto; 
+    }
+    
+    .logo {
+        margin-left: 1em;
+        margin-right: -5px;
+    }
+    .box1{
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: 0em;
+        border-radius: 0px;
+        width: 0em;
+        height: 0em;
+        margin-right: 0em;
+        margin-left: 0em;
+        margin-top: 0em;
+    }
+    .satu{
+        float: left;
+        
+    }
+    .satu{
+        margin: 0;
+        padding: 0;
+    }
+    .satu::before,
+    .satu::after {
+        content: "";
+        display: table;
+    }
+    .satu::after{
+        clear: both;
+    }
+    .satu{
+        margin-top: 3em;
+        margin-left: 10em;
+    }
+    .menuu{
+        margin-right: 20px;
+    }
+    .kanan{
+        margin-right: -5px;
+    }
+}
