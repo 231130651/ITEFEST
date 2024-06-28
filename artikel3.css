@@ -1,0 +1,346 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(to right, #025859, #009EA0);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-right: 2em;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 390;
+}
+
+.navbar ul li.logo {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-left: 2em;
+    padding-right: 1em;
+}
+
+.navbar ul li.community a{
+    font-weight: bold;
+}
+
+.navbar ul li.login {
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navbar ul li.login a {
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: #065757;
+}
+
+.navbar ul li.register {
+    margin-right: 0.5em;
+}
+
+.navbar ul li.login a:hover {
+    background-color: #098c8c;
+    box-shadow: 1px 1px 13px -4px black;
+    border: 1.5px solid white;
+}
+
+.navbar ul li.profile-icon {
+    margin-left: 10px;
+}
+
+.navbar ul li.profile-icon a img {
+    width: 3em;
+    height: 43px;
+    float: right;
+}
+
+.header-bar {
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.header-bar h1 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    color: #065757;
+    margin: 0;
+}
+
+.header-bar nav {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 486px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.new-post-btn {
+    display: flex;
+    align-items: center;
+    background-color: #065757;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.new-post-btn .icon {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+aside {
+    width: 300px;
+    padding: 20px;
+    margin-right: 20px;
+    position: sticky;
+    top: 10em;
+    height: fit-content;
+}
+
+.rules{
+    background-color: #b2ebf2;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.rules-title{
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #065757;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.rules ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.rules ul li {
+    margin-bottom: 10px;
+}
+
+section a{
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+.share {
+    flex-grow: 1;
+    background-color: #b2ebf2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 700px;
+}
+
+.week-btn,
+.tips-btn {
+    color: #065757;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #065757;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.tips-btn.active {
+    background-color: #065757;
+    color: white;
+}
+
+.article {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #b2ebf2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.article a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.article .text-content {
+    position: relative;
+}
+
+.article h4 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #065757;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.article h4 time {
+    margin-left: 5px;
+    font-style: italic;
+}
+
+.article h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+footer{
+    margin-top: 8em;
+    margin-left: 1px;
+    margin-bottom: 1em;
+    background-color: white;
+    border:1px solid #717272;
+    border-left: none;
+    border-right: none;
+    width: 1258px;
+    height: 26em;
+}
+.isi_artikel_footer{
+    margin-left: 5em;
+}
+.jdl_artikel_footer{
+    font-weight: bold;
+    margin-top: 4em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+.jdl_artikel_footer1{
+    font-weight: bold;
+    margin-top: 6em;
+    margin-bottom: 1em;
+    margin-left: 5em;
+}
+.isi_artikel_footer1{
+    margin-left: 19em;
+    margin-top: -2em;
+}
+.jdl_artikel_footer2{
+    float: right;
+    margin-right: 473px;
+    margin-top: -14em;
+}
+.isi_artikel_footer2{
+    float: right;
+    margin-top: -12em;
+    margin-right: 27em;
+}
+.zero_bawah{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-size: 15px;
+
+}
+.isi_artikel_footer3{
+    float: right;
+    margin-top: -14em;
+    margin-right: 17em;
+
+}
+.jdl_artikel_footer3{
+    font-weight: bold;
+    float: right;
+    margin-right: 21em;
+    margin-top: -16em;
+}
+.masukkan_email_bawah{
+    background-color: rgb(226, 226, 226);
+    display: table;
+    width: 12em;
+    height: 2em;
+    line-height: 3em;
+    padding-left: 1em;
+    margin-left: 45em;
+    margin-top: -3em;
+    color: rgb(139, 138, 138);
+}
+.untuk_tombol_nya{
+    color: white;
+    background-color: #009EA0;
+    display: table;
+    padding: 13px 15px;
+    border-radius: 7px;
+    float: right;
+    margin-right: 10em;
+    margin-top: -3em;
+}
+.copyright{
+    text-align: center;
+    padding-top: 3em;
+}
