@@ -196,8 +196,6 @@ a{
     cursor: pointer;
     margin-top: 5em;
     margin-left: 20em;
-    border: 1px solid black;
-    border-radius: 9.5em;
 }
 .bagian_tengah1 img:hover{
     box-shadow: 0px 0px 27px -5px black;
