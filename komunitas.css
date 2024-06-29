@@ -86,7 +86,6 @@ header {
 }
 
 .header-bar {
-    width: 100%;
     background-color: white;
     border-bottom: 1px solid lightgray;
     padding: 10px 20px;
@@ -437,6 +436,7 @@ footer{
         display: none;
     }
     .header-bar {
+        width: 100%;
         background-color: white;
         border-bottom: 1px solid lightgray;
         padding: 10px 20px;
@@ -561,7 +561,7 @@ footer{
         border:1px solid #717272;
         border-left: none;
         border-right: none;
-        width: 1258px;
+        width: 100%;
         height: 26em;
     }
     .isi_artikel_footer{
